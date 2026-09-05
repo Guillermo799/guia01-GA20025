@@ -1,0 +1,79 @@
+#carnet {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(180deg, #0d1117 0%, #131a24 60%, #0d1117 100%);
+  border-radius: 14px;
+  border: 1px solid #2a3a4a;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: #e6edf3;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Patrón sutil tipo "circuito/código" en la parte superior */
+#carnet::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  background-image:
+    linear-gradient(90deg, transparent 48%, #3fb950 48%, #3fb950 52%, transparent 52%),
+    linear-gradient(0deg, transparent 48%, #3fb950 48%, #3fb950 52%, transparent 52%);
+  background-size: 40px 40px;
+  opacity: 0.08;
+}
+
+/* Silueta de "carretera al horizonte" en la parte inferior, evocando viajes en moto */
+#carnet::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 90px;
+  background:
+    linear-gradient(transparent, rgba(255, 122, 0, 0.06)),
+    repeating-linear-gradient(
+      100deg,
+      transparent 0px,
+      transparent 25px,
+      rgba(255, 255, 255, 0.06) 25px,
+      rgba(255, 255, 255, 0.06) 45px
+    );
+  clip-path: polygon(0 100%, 100% 100%, 65% 20%, 35% 20%);
+  opacity: 0.5;
+}
+
+.carnet-nombre {
+  font-size: 22px;
+  font-weight: 600;
+  color: #58a6ff;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.carnet-nombre::before {
+  content: "</> ";
+  color: #3fb950;
+  font-family: 'Courier New', monospace;
+}
+
+.carnet-id {
+  font-size: 13px;
+  color: #8b949e;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Courier New', monospace;
+}
+
+.carnet-descripcion {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #c9d1d9;
+  position: relative;
+  z-index: 1;
+}
