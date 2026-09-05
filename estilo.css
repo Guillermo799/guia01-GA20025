@@ -1,20 +1,26 @@
-#carnet {
-background-color: #1a1a2e;
-color: #e0e0e0;
-border: 2px solid #0f9d58;
-border-radius: 10px;
-padding: 20px;
-max-width: 500px;
-margin: 30px auto;
-font-family: Arial, sans-serif;
-box-shadow: 0 0 15px rgba(15, 157, 88, 0.4);
-}
-#carnet h2 {
-color: #0f9d58;
-margin-top: 0;
+body {
+  background-color: #eef1f5;
+  font-family: Arial, sans-serif;
 }
 
-#RO23021{
+#carnet {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  border: 2px solid #0f9d58;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 15px rgba(15, 157, 88, 0.4);
+}
+
+#carnet h2 {
+  color: #0f9d58;
+  margin-top: 0;
+}
+
+#RO23021 {
   max-width: 500px;
   margin: 30px auto;
   padding: 30px;
@@ -92,4 +98,32 @@ margin-top: 0;
   color: #c9d1d9;
   position: relative;
   z-index: 1;
+}
+
+#MM24019 {
+  background-color: #0a0e17;
+  color: #4fc3f7;
+  border: 2px solid #2196f3;
+  border-radius: 8px;
+  padding: 30px 40px;
+  max-width: 600px;
+  margin: 60px auto;
+  font-family: "Courier New", monospace;
+  box-shadow: 0 0 15px #2196f3, 0 0 30px #1565c0;
+}
+
+#MM24019 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #82d4ff;
+  text-shadow: 0 0 8px #2196f3;
+}
+
+#MM24019 p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#MM24019 strong {
+  color: #ffffff;
 }
