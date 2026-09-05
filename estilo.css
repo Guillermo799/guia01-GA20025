@@ -1,0 +1,32 @@
+body {
+  background-color: #eef1f5;
+  font-family: Arial, sans-serif;
+}
+
+#carnet {
+  background-color: #0a0e17;
+  color: #4fc3f7;
+  border: 2px solid #2196f3;
+  border-radius: 8px;
+  padding: 30px 40px;
+  max-width: 600px;
+  margin: 60px auto;
+  font-family: "Courier New", monospace;
+  box-shadow: 0 0 15px #2196f3, 0 0 30px #1565c0;
+}
+
+#carnet h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #82d4ff;
+  text-shadow: 0 0 8px #2196f3;
+}
+
+#carnet p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#carnet strong {
+  color: #ffffff;
+}
